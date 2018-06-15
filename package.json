@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Developer blog of Mato Žgajner",
   "scripts": {
-    "build": "node_modules/.bin/harp compile src public"
+    "build": "node_modules/.bin/harp compile src public",
+    "dev": "node_modules/.bin/harp server src"
   },
   "repository": {
     "type": "git",
