@@ -1,0 +1,38 @@
+{
+  "index": {
+    "title": "Blog",
+    "hideInListing": true
+  },
+  "multiple-node-authors-in-drupal": {
+    "title": "Multiple node authors in Drupal",
+    "date": "2013-03-27"
+  },
+  "favicon-and-its-brethren": {
+    "title": "Favicon and its brethren",
+    "date": "2013-05-30"
+  },
+  "ux-mistakes-that-keep-happening": {
+    "title": "UX mistakes that keep happening",
+    "date": "2013-06-19"
+  },
+  "mobile-first-on-ie8-without-polyfills": {
+    "title": "Mobile first on IE8 without polyfills",
+    "date": "2014-04-06"
+  },
+  "writing-maintainable-and-extensible-css": {
+    "title": "Writing maintainable and extensible CSS (talk)",
+    "date": "2014-04-30"
+  },
+  "youre-not-abusing-sass-enough": {
+    "title": "You're not abusing Sass enough (talk)",
+    "date": "2015-03-04"
+  },
+  "making-small-big-again": {
+    "title": "Making small big again (talk)",
+    "date": "2016-10-12"
+  },
+  "javascript-on-tv": {
+    "title": "JavaScript on TV (talk)",
+    "date": "2017-10-05"
+  }
+}

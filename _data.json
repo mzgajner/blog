@@ -1,0 +1,15 @@
+{
+  "index": {
+    "link": "/",
+    "showTitle": false,
+    "title": "Me"
+  },
+  "Blog": {
+    "link": "/blog",
+    "title": "Blog"
+  },
+  "work": {
+    "link": "/work",
+    "title": "Work"
+  }
+}
