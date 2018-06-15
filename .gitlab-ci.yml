@@ -5,7 +5,7 @@ pages:
     paths:
     - node_modules
   script:
-  - npm install -g harp
+  - npm install -g harp --unsafe-perms
   - harp compile ./ public
   artifacts:
     paths:
