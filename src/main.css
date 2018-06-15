@@ -1,20 +1,9 @@
-:root {
-  font-size: 18px;
-}
-
-body {
-  font-family: 'IBM Plex Sans', 'Times New Roman', Times, serif;
-}
-
-.container {
-  max-width: 960px !important;
-}
+:root { font-size: 18px; }
+body { font-family: 'IBM Plex Sans', 'Times New Roman', Times, serif; }
+.container { max-width: 960px !important; }
 
 .navbar .container,
-.navbar .navbar-brand {
-  justify-content: center;
-}
-
+.navbar .navbar-brand { justify-content: center;}
 
 .portrait {
   display: block;
