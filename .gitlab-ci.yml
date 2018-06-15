@@ -1,12 +1,12 @@
-image: node:8
+image: node:alpine
 
 pages:
   cache:
     paths:
     - node_modules
   script:
-  - npm install -g harp --unsafe-perms
-  - harp compile ./ public
+  - npm install
+  - npm run build
   artifacts:
     paths:
     - public
