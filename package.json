@@ -12,6 +12,6 @@
   },
   "author": "mato@zgajner.com",
   "devDependencies": {
-    "harp": "^0.26.0"
+    "harp": "^0.31.0"
   }
 }
