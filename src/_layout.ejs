@@ -34,7 +34,7 @@
           <strong>Post date:</strong>
           <time datetime="<%= date %>">
             <% dateObj = new Date(date); %>
-            <%= dateObj.toLocaleString('en-US', { month: "long" }) + ' ' + dateObj.getDay() + ', ' + dateObj.getFullYear(); %>
+            <%= dateObj.toLocaleString('en-US', { month: "long" }) + ' ' + dateObj.getDate() + ', ' + dateObj.getFullYear(); %>
           </time>
         </p>
       <% } %>
