@@ -6,19 +6,19 @@ This is a short summary of the most important companies and projects in my profe
 
 *2017 - current*
 
-I'm currently doing contractual work for Reciprocity Inc. on their ZenGRC app.
+I'm currently fully employed as a team lead at Reciprocity.
 
 ## United.Cloud
 
 *2016 - 2017*
 
-At United.Cloud, I was involved in development of a smart TV app that was part of a new IPTV platform. It was a standard interface with features expected on a modern TV such as viewing live channels, reading EPG, streaming VoD content etc. Because it had to be multiplatform, we implemented it as a JavaScript app based on [Vue.js](https://vuejs.org/) with the addition of a few official modules (`vuex`, `vue-router`). I was one of the most senior team members responsible for a lot of technical/architectural decisions. The application has been in production for a while under the [EON brand](https://eon.tv/).
+At United.Cloud, I was involved in development of a smart TV app that was part of a new IPTV platform. It was a standard TV interface with features one would typically expect such as viewing live channels, browsing programme guides, streaming VoD content etc. Because it had to be multiplatform, we implemented it as a JavaScript app based on [Vue.js](https://vuejs.org/) with the addition of a few official modules. I was one of the most senior team members responsible for a lot of technical/architectural decisions. The application has been in production if a few countries for a while under the [EON brand](https://eon.tv/).
 
 ## Celtra
 
 *2015 - 2016*
 
-Celtra is a multinational company that specialises in mobile advertising. As a member of the awesome Dashboard team I helped develop part of Celtra's AdCreator platform, an interactive dashboard interface (think Google Analytics) for ad management. Most of the application was written in CoffeeScript and based on Backbone with some parts in Vue.
+Celtra is a multinational company that specialises in mobile advertising. As a member of the Dashboard team I helped develop part of Celtra's AdCreator platform, an interactive analytics dashboard for ad management. Most of the application was written in CoffeeScript and based on Backbone with some parts in Vue.
 
 ## Astina (later Origammi)
 
