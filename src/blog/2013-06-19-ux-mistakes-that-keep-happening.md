@@ -7,7 +7,7 @@ I generally dislike these *Top 10 something list* sorts of posts, but I still wr
     People from marketing once heard this technique prevents visitors from leaving your page. I prefer to believe most people can master the use of tabs and back button. [Smashing magazine](//uxdesign.smashingmagazine.com/2008/07/01/should-links-open-in-new-windows/) and [Jakob Nielsen](//www.nngroup.com/articles/top-10-mistakes-web-design/) say we shouldn't take control from users. Trust them.
 
 - **Complicating when it's not necessary**
-	*It would be too plain without it* is a terrible argument. Make the culprit some coffee and talk him into [trying a one column layout](http://goodui.org/#1) first.
+	*It would be too plain without it* is a terrible argument. Make the culprit some coffee and talk them into [trying a one column layout](http://goodui.org/#1) first.
 
 - **Obscuring links for looks**
 	Many designers find underlined links ugly and unacceptable. Don't let them go too far with this and remind them to use different colors for *:visited* links. Here are some [great guidelines](//www.nngroup.com/articles/guidelines-for-visualizing-links/).
