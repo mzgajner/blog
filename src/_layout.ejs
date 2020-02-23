@@ -16,9 +16,9 @@
         <% for(var slug in public._data){ %>
           <a
             href="<%= public._data[slug].link %>"
-            class="navbar-item<%= public._data[slug].link === link ? ' is-active' : ' is-disabled' %>"
+            class="navbar-item<%= public._data[slug].id === current.path[0] ? ' is-active' : ' is-disabled' %>"
           >
-            <%= public._data[slug].title %>
+            <%= public._data[slug].title %> %>
           </a>
         <% }; %>
       </div>
