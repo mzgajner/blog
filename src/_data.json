@@ -14,5 +14,10 @@
     "link": "/work",
     "title": "Work",
     "id": "work"
+  },
+  "fun": {
+    "link": "/fun",
+    "title": "Fun",
+    "id": "fun"
   }
 }
