@@ -11,12 +11,12 @@
     "id": "blog"
   },
   "work": {
-    "link": "/work",
+    "link": "/work.html",
     "title": "Work",
     "id": "work"
   },
   "fun": {
-    "link": "/fun",
+    "link": "/fun.html",
     "title": "Fun",
     "id": "fun"
   }
