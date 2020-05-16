@@ -8,4 +8,4 @@ markup:
       unsafe: true
 
 permalinks:
-  blog: /:year/:month/:title/
+  blog: /blog/:year/:month/:title/
