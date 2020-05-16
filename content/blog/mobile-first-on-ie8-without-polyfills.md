@@ -1,3 +1,8 @@
+---
+title: Mobile first on IE8 without polyfills
+date: 2014-04-06
+---
+
 It can prove difficult to follow all the best practices and modern approaches while also staying backwards compatible. IE8 support is still a common project requirement nowadays and if you implement a responsive design mobile first, you will either have to use [a polyfill for media queries](//github.com/scottjehl/Respond) or convince your customer that serving the mobile version to IE8 users is OK. While both of those are valid solutions, there's also a third way.
 
 The technique is relatively simple, it requires the use of Sass and responsive mixins. This enables us to automatically generate stylesheets without media queries, which we then conditionally load on IE8.

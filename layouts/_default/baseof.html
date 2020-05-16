@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.2/css/bulma.min.css">
+    <link rel="stylesheet" href="/main.css">
+    <title>{{- block "title" . }}{{ .Title }} | Mato Žgajner{{- end }}</title>
+  </head>
+  <body>
+    <nav class="navbar is-dark">
+      <div class="container">
+        <div class="navbar-brand">
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+          <a
+            class="navbar-item {{ if $currentPage.IsMenuCurrent "main" . }}is-active{{ else }}is-disabled{{ end }}"
+            href="{{ .URL }}"
+          >{{ .Name }}</a>
+        {{ end }}
+        </div>
+      </div>
+      </nav>
+
+      <section class="section">
+      <div class="container content">
+        {{- block "main" . }}{{- end }}
+      </div>
+      </section>
+    </body>
+  </body>
+</html>

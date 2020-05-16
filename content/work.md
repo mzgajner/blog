@@ -1,12 +1,25 @@
+---
+title: "Work"
+menu:
+  main:
+    weight: 30
+---
+
 This is a short summary of the most important companies and projects in my professional career. If you are interested in working with me, I can generally be reached at [work@zgajner.com](mailto:work@zgajner.com), though I'm currently fully booked.
 
 <hr>
 
+## Sleuth
+
+*current*
+
+You may currently find me at [Sleuth](https://www.sleuth.io), a startup building a developer tool that helps you deploy more often.
+
 ## Reciprocity Inc.
 
-*2017 - current*
+*2017 - 2020*
 
-I'm currently fully employed as a team lead at Reciprocity.
+I joined [Reciprocity](https://reciprocitylabs.com/) as a front-end contractor and eventually became of the more senior team members. As the entire organization grew, I was able to take on many interesting responsibilities such as conducting technical interviews at various stages, coordinating the front-end guild and organizing hackathons. My last year with them, I had the pleasure of leading the Bergdoktor team that was responsible for internal platform development.
 
 ## United.Cloud
 
@@ -18,7 +31,7 @@ At United.Cloud, I was involved in development of a smart TV app that was part o
 
 *2015 - 2016*
 
-Celtra is a multinational company that specialises in mobile advertising. As a member of the Dashboard team I helped develop part of Celtra's AdCreator platform, an interactive analytics dashboard for ad management. Most of the application was written in CoffeeScript and based on Backbone with some parts in Vue.
+Celtra is a multinational company that specializes in mobile advertising. As a member of the Dashboard team I helped develop part of Celtra's AdCreator platform, an interactive analytics dashboard for ad management. Most of the application was written in CoffeeScript and based on Backbone with some parts in Vue.
 
 ## Astina (later Origammi)
 

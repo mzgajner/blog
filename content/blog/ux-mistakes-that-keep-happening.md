@@ -1,3 +1,8 @@
+---
+title: UX mistakes that keep happening
+date: 2013-06-19
+---
+
 I generally dislike these *Top 10 something list* sorts of posts, but I still wrote one - *sigh*. This is about UX mistakes that have been identified, analyzed and criticised by UX experts, yet somehow still linger. Feel free to use it as support in arguments with project managers.
 
 - **Carousels**

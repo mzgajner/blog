@@ -1,4 +1,9 @@
-EDIT: I stumbled upon [this wonderful repo](//github.com/audreyr/favicon-cheat-sheet) the other day. It renders this entire blogpost obsolete.
+---
+title: Favicon and its brethren
+date: 2013-05-30
+---
+
+EDIT: I stumbled upon [this wonderful repo](//github.com/audreyr/favicon-cheat-sheet) the other day. It renders this entire blog post obsolete.
 
 The favicon has come along way since its humble 16 × 16 px beginnings. Screen resolutions are skyrocketing and visual representations of websites are needed in different applications on different devices. This post is intended to be a collection of many image sizes that can (should?) be included on modern websites.
 

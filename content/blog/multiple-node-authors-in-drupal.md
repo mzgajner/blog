@@ -1,3 +1,8 @@
+---
+title: Multiple node authors in Drupal
+date: 2013-03-27
+---
+
 While working on the current website of [Radio Študent](//www.radiostudent.si), I wanted a node to have multiple authors, because many of the published articles were collaborations of multiple writers. I presumed Drupal would support this out of the box, since it seems like a relatively common situation, but it didn't. So here's how you can do it manually.
 
 ### Step 1 - Content type modifications

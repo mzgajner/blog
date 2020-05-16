@@ -1,10 +1,17 @@
+---
+title: Fun
+menu:
+  main:
+    weight: 40
+---
+
 Some of the things I do for fun.
 
 <hr>
 
 ## Danes je nov dan
 
-_Today is a new day_ is a collective of activists focused on increasing political participation, transparency and public oversight - often with the help of digital technology. I've been hanging around since ~2016, occasionally volunteering to develop bits and pieces of various projects (from [parliament-tracking tools](https://parlameter.si/) to [battery chicken simulations](https://danesjenovdan.si/kura/)).
+_Today is a new day_ is a collective of activists focused on increasing political participation, transparency and public oversight - often with the help of digital technology. I've been hanging around since ~2016, occasionally volunteering to develop bits and pieces of various projects (from [parliament tracking tools](https://parlameter.si/) to [battery chicken simulations](https://danesjenovdan.si/kura/)).
 
 There's a lot to cover, so check out [the website](https://danesjenovdan.si/).
 
@@ -20,4 +27,4 @@ If you speak Slovene, there are full recordings and podcast feeds of all of the 
 
 ## Oktet 9
 
-A small men's choir (well, an [acapella group](https://gph.is/1c3jSXd)) we've had since high-school. Not much to say other than they're some of my closest friends ❤️. We have [an outdated website](https://oktet9.com/) and [a release on Bandcamp](https://oktet9.bandcamp.com/releases) noone ever bought.
+A small men's choir (well, an [a capella group](https://gph.is/1c3jSXd)) we've had since high-school. Not much to say other than they're some of my closest friends ❤️. We have [an outdated website](https://oktet9.com/) and [a release on Bandcamp](https://oktet9.bandcamp.com/releases) no one ever bought.

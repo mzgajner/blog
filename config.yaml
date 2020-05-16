@@ -1,0 +1,11 @@
+baseURL: "https://mato.zgajner.com/"
+languageCode: "en-us"
+title: "My New Hugo Site"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+permalinks:
+  blog: /:year/:month/:title/
