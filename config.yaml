@@ -9,3 +9,5 @@ markup:
 
 permalinks:
   blog: /blog/:year/:month/:title/
+
+publishDir: build
