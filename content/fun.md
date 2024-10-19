@@ -12,7 +12,7 @@ Some of the things I do for fun.
 
 David Šarlah, a friend from primary school, reached out to me during the pandemic. I was kinda grumpy at first since I knew he was a recruiter and I thought he's just trying to hire me, but then we had a beer and decided to start a meetup.
 
-That's how _Kozjansko geekališče_ was born. We're a bunch of devs and other IT workers from [Kozjansko and Obsotelje](https://sl.wikipedia.org/wiki/Kozjansko), we meet every first Friday of the month at 19:30 in [MC Slatna](https://mladinskislatna.si/mc-slatna/). There's a [website](https://geeki.zgajner.com) and [stickers](/geekalisce-stickers.jpg).
+That's how _Kozjansko geekališče_ was born. We're a bunch of devs and other IT workers from [Kozjansko and Obsotelje](https://sl.wikipedia.org/wiki/Kozjansko) who meet monthly in [MC Slatna](https://mladinskislatna.si/mc-slatna/). There's a [website](https://geeki.zgajner.com) and [stickers](/geekalisce-stickers.jpg).
 
 
 ## Danes je nov dan
