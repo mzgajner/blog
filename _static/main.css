@@ -8,7 +8,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Ox
 .portrait {
   display: block;
   width: 384px;
-  margin: 0 auto 36px auto;
+  margin: 2rem auto 0 auto;
   max-width: 100%;
 }
 
