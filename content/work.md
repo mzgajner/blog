@@ -1,8 +1,7 @@
 ---
 title: "Work"
-menu:
-  main:
-    weight: 30
+tags: main-nav
+position: 30
 ---
 
 This is a short summary of the most important companies and projects in my professional career. If you are interested in working with me, I can generally be reached at [work@zgajner.com](mailto:work@zgajner.com), though I'm currently fully booked.

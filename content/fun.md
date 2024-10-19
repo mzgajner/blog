@@ -1,8 +1,7 @@
 ---
 title: Fun
-menu:
-  main:
-    weight: 40
+tags: main-nav
+position: 40
 ---
 
 Some of the things I do for fun.

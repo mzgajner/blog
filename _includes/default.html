@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.2/css/bulma.min.css">
+  <link rel="stylesheet" href="/main.css">
+  <title>{{ title }} | Mato Žgajner</title>
+</head>
+
+<body>
+  <nav class="navbar is-dark">
+    <div class="container">
+      <div class="navbar-brand">
+        {% assign navigation_links = collections.main-nav | sort: "data.position" %}
+        {%- for post in navigation_links -%}
+        <a class="navbar-item {% if page.url == post.url %}is-selected{% endif %}" href="{{ post.url }}">
+          {{ post.data.title }}
+        </a>
+        {%- endfor -%}
+      </div>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="container content">
+      {% unless hide-title %}<h1 class="title">{{ title }}</h1>{% endunless %}
+      {% if date %}
+      <p>
+        <strong>Post date:</strong>
+        <timedatetime="{{ date | date: '%Y-%m-%dT%H:%M:%S.%f' }}">
+          {{ date | date: '%b %d, %Y'}}
+          </time>
+      </p>
+      {% endif %}
+      {{ content }}
+    </div>
+  </section>
+
+</body>
+
+</html>

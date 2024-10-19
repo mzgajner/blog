@@ -1,4 +1,4 @@
-public_html
-node_modules
-.vscode
-build
+# Based on https://raw.githubusercontent.com/github/gitignore/main/Node.gitignore
+
+node_modules/
+_site/
