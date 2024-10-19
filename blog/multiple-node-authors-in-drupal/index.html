@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.2/css/bulma.min.css">
+  <link rel="stylesheet" href="/main.css">
+  <title>Multiple node authors in Drupal | Mato Žgajner</title>
+</head>
+
+<body>
+  <nav class="navbar is-dark">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item " href="/">
+          Me
+        </a><a class="navbar-item " href="/blog/">
+          Blog
+        </a><a class="navbar-item " href="/work/">
+          Work
+        </a><a class="navbar-item " href="/fun/">
+          Fun
+        </a></div>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="container content">
+      <h1 class="title">Multiple node authors in Drupal</h1>
+      
+      <p>
+        <strong>Post date:</strong>
+        <timedatetime="2013-03-27T00:00:00.%f">
+          Mar 27, 2013
+          </time>
+      </p>
+      
+      <p>While working on the current website of <a href="//www.radiostudent.si">Radio Študent</a>, I wanted a node to have multiple authors, because many of the published articles were collaborations of multiple writers. I presumed Drupal would support this out of the box, since it seems like a relatively common situation, but it didn't. So here's how you can do it manually.</p>
+<h3>Step 1 - Content type modifications</h3>
+<ol>
+<li>Add a <em>user reference field</em> allowing multiple values to the content type in question. <a href="//drupal.org/project/references">References module</a> is required for this.</li>
+<li>Inform editors this field should be used to enter all additional authors besides themselves when publishing articles.</li>
+<li>Edit node template or use <a href="http://drupal.org/project/ds">Display Suite</a> to customize node display and include your newly created field next to the primary author.</li>
+</ol>
+<h3>Step 2 - Profile page modifications</h3>
+<p>Having references to all authors on the node is cool, but we also need to show all nodes of a single author on his profile page, whether he's the main author or just entered among additional authors in our new field.</p>
+<ol>
+<li>Create a page view using <a href="https://drupal.org/project/views">Views</a> and call it <em>All nodes by user</em> or something similar.</li>
+<li>Set the URL of the view to <em>/user/%</em> so that it will override default user profiles.</li>
+<li>Install <a href="//drupal.org/node/357082">this patch</a> for Views to allow passing of values from contextual filters to regular filters.</li>
+<li>Filter nodes that have user ID from URL in Author field <strong>or</strong> in Additional authors field you created earlier.</li>
+</ol>
+<p>I admit it's not the cleanest thing ever, especially with the patch requiring manual reapplication whenever Views are updated, but it seems to work well.</p>
+<p>I was given a possible <a href="//stackoverflow.com/questions/11207011/authors-nodes-page-with-views#comment14745045_11207011">alternative solution</a> when I posted this problem on Stack Overflow. It sounds even more promising, though I didn't use it at the time, because I had issues with <a href="//drupal.org/project/rules">Rules</a> (ongoing problem since my childhood).</p>
+
+    </div>
+  </section>
+
+</body>
+
+</html>

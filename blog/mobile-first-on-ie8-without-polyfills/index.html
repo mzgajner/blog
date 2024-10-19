@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.2/css/bulma.min.css">
+  <link rel="stylesheet" href="/main.css">
+  <title>Mobile first on IE8 without polyfills | Mato Žgajner</title>
+</head>
+
+<body>
+  <nav class="navbar is-dark">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item " href="/">
+          Me
+        </a><a class="navbar-item " href="/blog/">
+          Blog
+        </a><a class="navbar-item " href="/work/">
+          Work
+        </a><a class="navbar-item " href="/fun/">
+          Fun
+        </a></div>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="container content">
+      <h1 class="title">Mobile first on IE8 without polyfills</h1>
+      
+      <p>
+        <strong>Post date:</strong>
+        <timedatetime="2014-04-06T00:00:00.%f">
+          Apr 06, 2014
+          </time>
+      </p>
+      
+      <p>It can prove difficult to follow all the best practices and modern approaches while also staying backwards compatible. IE8 support is still a common project requirement nowadays and if you implement a responsive design mobile first, you will either have to use <a href="//github.com/scottjehl/Respond">a polyfill for media queries</a> or convince your customer that serving the mobile version to IE8 users is OK. While both of those are valid solutions, there's also a third way.</p>
+<p>The technique is relatively simple, it requires the use of Sass and responsive mixins. This enables us to automatically generate stylesheets without media queries, which we then conditionally load on IE8.</p>
+<h3>Step 1 - Use mixins for responsive styling</h3>
+<p>Since Sass 3.2, we can use mixins that allow us to include styling for specific breakpoints right next to our general styling.</p>
+<p><em>Definition:</em></p>
+<pre><code class="language-sass">=respond-to($point)
+    @if $point == &quot;desktop&quot;
+        @media (min-width: 1200px)
+            @content
+</code></pre>
+<p><em>Use:</em></p>
+<pre><code class="language-sass">.some-class
+    font-size: 16px
+    +respond-to(&quot;desktop&quot;)
+        font-size: 14px
+</code></pre>
+<p>You can learn a bit more about the technique from <a href="http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32#variables-in-queries-using-content">this article</a>. it's very useful by itself, but in our case it's just a prerequisite.</p>
+<h3>Step 2 - Generate separate stylesheet for IE8</h3>
+<p>For this step, the mixin we created above will require a bit of modification. We'll set a Sass variable to indicate whether we are generating an IE stylesheet or not. Inside the mixin we'll check this variable to decide if we should wrap the styling for a specific breakpoint in a media query (modern browsers) or just include it directly (IE8).</p>
+<pre><code class="language-sass">$ie: true
+
+=respond-to($point)
+    @if $point == &quot;desktop&quot; and $ie == true
+        @content
+    @else if $point == &quot;desktop&quot;
+        @media (min-width: 1200px)
+            @content
+</code></pre>
+<p>To automate the process of separate stylesheet generation, define your styling and mixins in a <a href="http://sass-lang.com/guide#topic-4">partial file</a> (e.g. <code>_style.sass</code>), then create two other files (e.g. <code>main.sass</code> and <code>ie.sass</code>) in which you set the <code>$ie</code> variable and import that partial.</p>
+<p><em>main.sass:</em></p>
+<pre><code class="language-sass">$ie: false
+@import style
+</code></pre>
+<p><em>ie.sass:</em></p>
+<pre><code class="language-sass">$ie: true
+@import style
+</code></pre>
+<p>Now run whatever you use for Sass compilation to build the two stylesheets.</p>
+<h3>Step 3 - Conditionally include your stylesheets</h3>
+<p>All that's left now is to make sure IE8 loads the CSS we prepared for it and all other browsers load the regular one. We achieve this by including the stylesheets inside conditional comments.</p>
+<pre><code class="language-html">&lt;!--[if !IE]&gt; --&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;main.css&quot;&gt;&lt;!-- &lt;![endif]--&gt;
+&lt;!--[if gte IE 9]&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;main.css&quot;&gt;&lt;![endif]--&gt;
+&lt;!--[if lte IE 8]&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;ie.css&quot;&gt;&lt;![endif]--&gt;
+</code></pre>
+<p>And that's it. Check out the <a href="//github.com/mzgajner/ie8-separate-css-technique">demo</a> I put up on Github for more information.</p>
+<p>Kudos to <a href="//github.com/benib">Beni</a> who demonstrated this technique to me.</p>
+<p>EDIT: The good people of <a href="//reddit.com/r/webdev/">r/webdev</a> informed me that an even more advanced implementation of this technique is available as part of <a href="//github.com/Team-Sass/breakpoint">Breakpoint</a>.</p>
+
+    </div>
+  </section>
+
+</body>
+
+</html>

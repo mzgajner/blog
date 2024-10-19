@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/mzgajner
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://mato.zgajner.com
+  * I am mzgajner (https://keybase.io/mzgajner) on keybase.
+  * I have a public key ASD6atGbGYHhMdiUPKt3vEG5QUJ7e_fcacPIwutTLCrvwQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120fa6ad19b1981e131d8943cab77bc41b941427b7bf7dc69c3c8c2eb532c2aefc10a",
+      "host": "keybase.io",
+      "kid": "0120fa6ad19b1981e131d8943cab77bc41b941427b7bf7dc69c3c8c2eb532c2aefc10a",
+      "uid": "00cdf363c836b10f96b4479203581119",
+      "username": "mzgajner"
+    },
+    "merkle_root": {
+      "ctime": 1586854973,
+      "hash": "026cc8e289237d85094f07aafb762f32e5adaca3386f50c9ac5fa445fef33239f71671cb34dea0535a07a56c1b42fcd224cc2d405ec4a979e52bb020a4a02f70",
+      "hash_meta": "b1c330ca599077814962bbed9300259a57ddff3f9f80a8e23a37e0a794c43d69",
+      "seqno": 15913165
+    },
+    "service": {
+      "entropy": "yWqb13KwZWVp/bRYrc68EcjJ",
+      "hostname": "mato.zgajner.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.3.1"
+  },
+  "ctime": 1586854998,
+  "expire_in": 504576000,
+  "prev": "7afbcdbf556cb53faf33be63beefd4bcd52868ccf651f387c0aaa73efd8fd99b",
+  "seqno": 6,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg+mrRmxmB4THYlDyrd7xBuUFCe3v33GnDyMLrUywq78EKp3BheWxvYWTESpcCBsQgevvNv1VstT+vM75jvu/UvNUoaMz2UfOHwKqnPv2P2ZvEINv5DGrkWVTy4RSPEADcMpTC42GEsr4WATNjVnK8ElOVAgHCo3NpZ8RAzr2STE+p+AXkPC0lsaNHfucQLPio3h9r9VuTvfMwxrQgOH0ZS+du/cA0mGVCCeL6ZaHomvYln9KNGQ8ZoRBcBqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEILBLZbHtxgj2AxX8Udg2oSFOtl09c4vJVMS9/hIyMHNko3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/mzgajner
+
+==================================================================

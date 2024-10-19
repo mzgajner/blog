@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.2/css/bulma.min.css">
+  <link rel="stylesheet" href="/main.css">
+  <title>Hosting a Wolfenstein: Enemy Territory server in 2020 | Mato Žgajner</title>
+</head>
+
+<body>
+  <nav class="navbar is-dark">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item " href="/">
+          Me
+        </a><a class="navbar-item " href="/blog/">
+          Blog
+        </a><a class="navbar-item " href="/work/">
+          Work
+        </a><a class="navbar-item " href="/fun/">
+          Fun
+        </a></div>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="container content">
+      <h1 class="title">Hosting a Wolfenstein: Enemy Territory server in 2020</h1>
+      
+      <p>
+        <strong>Post date:</strong>
+        <timedatetime="2020-08-23T00:00:00.%f">
+          Aug 23, 2020
+          </time>
+      </p>
+      
+      <p>It's safe to say <a href="https://en.wikipedia.org/wiki/Wolfenstein:_Enemy_Territory">Wolfenstein: Enemy Territory</a> is the game that swallowed the biggest chunk of my life. Back in high school, at the peak of its popularity (which coincided with the peak of my puberty) pretty much everyone I knew was obsessed with it. <a href="https://purans.zgajner.com/">Clans</a> were formed, <a href="https://www.youtube.com/watch?v=CmnzmB9e03w">fragmovies</a> were edited, game configs were tweaked to hell and live games were streamed using a modded game client (because 2004 bandwidth).</p>
+<p>Fifteen years later I shed a tiny nostalgic tear when one of my old buddies called in the middle of a COVID-19 lockdown and asked if I'm up for some ET to pass the time. We got tired of random public matches pretty soon and wanted to relive a proper 3on3 on some of our favorite maps, so as the <em>IT guy</em> I was tasked with setting up a private server. In case you want to shoot some nazis in 2020, here are the steps:</p>
+<ol>
+<li>
+<p><strong>Tell everyone to get <a href="https://www.etlegacy.com/">ET: Legacy</a></strong>. It's an open source rewrite of the game that's still being actively maintained, it works on latest versions of all desktop OSes and has the most servers available for it.</p>
+</li>
+<li>
+<p><strong>Set up a VPS with your provider of choice</strong>. For reference, I used the $5 instance on <a href="https://www.vultr.com/">Vultr</a> and it handled 10 players without a hitch. Could probably do more, that's just the biggest crowd we managed to gather. Oh, and pick a geographical region nearby to get the lowest pings.</p>
+</li>
+<li>
+<p><strong>Install <a href="https://docs.docker.com/engine/install/ubuntu/#installation-methods">Docker</a></strong>. Alternatively, just select an image that comes with it preinstalled -- most providers offer the option during setup.</p>
+</li>
+<li>
+<p><strong>Clone <a href="https://github.com/mzgajner/etlegacy-server">this git repo</a> to your VPS and CD into it</strong></p>
+<pre><code class="language-sh">git clone https://github.com/mzgajner/etlegacy-server.git
+cd etlegacy-server
+</code></pre>
+<p>Everything should work out of the box, but take a look at <code>etl_server.cfg</code> and edit anything you might want to change, like the name of your server.</p>
+</li>
+<li>
+<p><strong>Build and run the image</strong></p>
+<pre><code class="language-sh">docker build --tag etlegacy --build-arg ET_PASSWORD=ServerPasswordHere
+docker run -p 27960:27960/udp -d etlegacy
+</code></pre>
+</li>
+<li>
+<p><strong>Deploy mortar!</strong></p>
+</li>
+</ol>
+
+    </div>
+  </section>
+
+</body>
+
+</html>

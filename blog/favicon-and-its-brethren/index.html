@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.2/css/bulma.min.css">
+  <link rel="stylesheet" href="/main.css">
+  <title>Favicon and its brethren | Mato Žgajner</title>
+</head>
+
+<body>
+  <nav class="navbar is-dark">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item " href="/">
+          Me
+        </a><a class="navbar-item " href="/blog/">
+          Blog
+        </a><a class="navbar-item " href="/work/">
+          Work
+        </a><a class="navbar-item " href="/fun/">
+          Fun
+        </a></div>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="container content">
+      <h1 class="title">Favicon and its brethren</h1>
+      
+      <p>
+        <strong>Post date:</strong>
+        <timedatetime="2013-05-30T00:00:00.%f">
+          May 30, 2013
+          </time>
+      </p>
+      
+      <p>EDIT: I stumbled upon <a href="//github.com/audreyr/favicon-cheat-sheet">this wonderful repo</a> the other day. It renders this entire blog post obsolete.</p>
+<p>The favicon has come along way since its humble 16 × 16 px beginnings. Screen resolutions are skyrocketing and visual representations of websites are needed in different applications on different devices. This post is intended to be a collection of many image sizes that can (should?) be included on modern websites.</p>
+<ul>
+<li>
+<p><strong>standard favicon.ico file</strong>
+Used to be just 16 × 16 px, but nowadays larger dimensions are necessary as well. E.g. pinning a website to the taskbar in Windows requires 32 × 32 px, double that for high pixel density displays and you're at 64 × 64 px. I recommend making separate versions instead of just making the largest one and letting the browser scale it since you want more control at these really small sizes. You can conveniently <a href="//demosthenes.info/blog/467/Creating-MultiResolution-Favicons-For-Web-Pages-With-GIMP">merge them all</a> into one <em>.ico</em> file using GIMP.</p>
+</li>
+<li>
+<p><strong>iOS home screen icons</strong>
+These are used as icons when pinning websites to the home screen. There are 4 dimensions to cover 2 devices with 2 screen types each:</p>
+<ul>
+<li>57 × 57 px (iPhone)</li>
+<li>114 × 114 px (iPhone with <em>Retina display</em>)</li>
+<li>72 × 72 px (iPad)</li>
+<li>144 × 144 px (iPad with <em>Retina display</em>)</li>
+</ul>
+<p>You can also specify whether the image is precomposed or not (if not, the device will add some gloss and other effects over the image). More in <a href="//developer.apple.com/library/ios/#documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html">Safari Web Content Guide</a>.</p>
+</li>
+<li>
+<p><strong>Opera Speed Dial icon</strong>
+Used as the thumbnail for Opera's Speed Dial screen. The minimum required dimension is 114 × 114 px, anything over 256 × 160 px will be resized, details on <a href="//dev.opera.com/articles/view/opera-speed-dial-enhancements/">Dev.Opera</a>.</p>
+</li>
+<li>
+<p><strong>Windows 8 Start Screen tile</strong>
+Displayed on all devices with Windows 8 when you pin a website to the Start Screen. The required dimension is 144 × 144 px, Microsoft provided <a href="//www.buildmypinnedsite.com/">an official tool</a> that helps you with the process.</p>
+</li>
+</ul>
+
+    </div>
+  </section>
+
+</body>
+
+</html>
