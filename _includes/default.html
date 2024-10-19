@@ -11,18 +11,20 @@
 </head>
 
 <body>
-  <nav class="navbar is-dark">
+  {% assign theme_classes = "is-dark, is-light" | split: ", " %}
+  {%- for theme_class in theme_classes -%}
+  <nav class="navbar {{ theme_class }}">
     <div class="container">
       <div class="navbar-brand">
-        {% assign navigation_links = collections.main-nav | sort: "data.position" %}
-        {%- for post in navigation_links -%}
-        <a class="navbar-item {% if page.url == post.url %}is-selected{% endif %}" href="{{ post.url }}">
-          {{ post.data.title }}
+        {%- for item in collections.navbar_items -%}
+        <a class="navbar-item" href="{{ item.url }}">
+          {{ item.data.title }}
         </a>
         {%- endfor -%}
       </div>
     </div>
   </nav>
+  {%- endfor -%}
 
   <section class="section">
     <div class="container content">
