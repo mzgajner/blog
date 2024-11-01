@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.2/css/bulma.min.css">
+  <link rel="stylesheet" href="/main.css">
+  <title>Slovenian holidays are annoyingly distributed | Mato Žgajner</title>
+</head>
+
+<body>
+  <nav class="navbar is-dark">
+    <div class="container">
+      <div class="navbar-brand"><a class="navbar-item" href="/">
+          Me
+        </a><a class="navbar-item" href="/blog/">
+          Blog
+        </a><a class="navbar-item" href="/work/">
+          Work
+        </a><a class="navbar-item" href="/fun/">
+          Fun
+        </a></div>
+    </div>
+  </nav><nav class="navbar is-light">
+    <div class="container">
+      <div class="navbar-brand"><a class="navbar-item" href="/">
+          Me
+        </a><a class="navbar-item" href="/blog/">
+          Blog
+        </a><a class="navbar-item" href="/work/">
+          Work
+        </a><a class="navbar-item" href="/fun/">
+          Fun
+        </a></div>
+    </div>
+  </nav><section class="section">
+    <div class="container content">
+      <h1 class="title">Slovenian holidays are annoyingly distributed</h1>
+      
+      <p>
+        <strong>Post date:</strong>
+        <timedatetime="2024-11-01T00:00:00.%f">
+          Nov 01, 2024
+          </time>
+      </p>
+      
+      <p>It's common to hear criticism about Slovenia having too many public holidays<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>, although in reality we seem to be <a href="https://en.wikipedia.org/wiki/List_of_countries_by_number_of_public_holidays">super average on that front</a>. What's more interesting to me is how they're distributed.</p>
+<p>The maximum possible amount of work-free days in a day is 13, but that number goes down quickly because we don't observe holidays on the next workday if they fall on a weekend, we just <em>lose</em> them. To make matters worse, we have three two-day clusters<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup> that are aligned so they always fall on the same days<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup>. This causes the actual amount of work-free days to fluctuate wildly and you often hear people discussing whether it's going to be a <em>good year</em> or a <em>bad year</em> when they come back to work after Christmas.</p>
+<p>I was wondering what the actual numbers are, so I threw together a <a href="https://github.com/mzgajner/holidays">quick script</a> and the results are quite interesting. On average, we get <strong>9.5775 days off each year</strong>, but the value fluctuates between 13 (at best) and 6 (at worst) on a 6 year period. Leap years introduce some noise, but that's still roughly right. Here's a chart for the next 50 years:</p>
+<p><img src="/slovenian-holidays-chart.svg" alt="A line chart showing the count of work free days per year in Slovenia"></p>
+<p>Now, my impulse was always that this is kind of annoying. If the humble and hardworking people of Slovenia ever elected me as their supreme leader, we would bring the total number of holidays down to 10 while simultaneously observing them on the next workday if they happened to fall on a weekend. That way everyone's life would be a bit more stable and predictable.</p>
+<p>On the other hand, maybe I'm looking at this wrong. Maybe good years and bad years are like the seasons, you just need to grab a beer or make some cocoa and embrace them.</p>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>Technically speaking, not all <a href="https://www.gov.si/en/topics/national-holidays/">public holidays</a> are work-free days in Slovenia and vice versa. I'm using <em>holidays</em> because that's what normal people call them. <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p>Christmas + Independence Day (Dec 25, Dec 26), New Year's Day (Jan 1, Jan 2) International Worker's Day (May 1, May 2) <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn3" class="footnote-item"><p>Unless it's a leap year, though that doesn't change much. <a href="#fnref3" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+
+    </div>
+  </section>
+
+</body>
+
+</html>
