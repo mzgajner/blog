@@ -21,5 +21,9 @@ export default async function(eleventyConfig) {
   });
 
   // Enable footnote plugin for default markdown parser
-  eleventyConfig.setLibrary("md", markdownIt().use(markdownItFootnote));
+  eleventyConfig.setLibrary("md", markdownIt({
+    html: true,
+    breaks: true,
+    linkify: true,
+  }).use(markdownItFootnote));
 };
