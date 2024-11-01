@@ -1,3 +1,6 @@
+import markdownIt from "markdown-it";
+import markdownItFootnote from "markdown-it-footnote";
+
 export default async function(eleventyConfig) {
   // Set input, layout and data directories
   eleventyConfig.setInputDirectory('content');
@@ -16,4 +19,7 @@ export default async function(eleventyConfig) {
     return collectionApi.getFilteredByTag('main-nav')
       .sort((a, b) => a.data.position - b.data.position);
   });
+
+  // Enable footnote plugin for default markdown parser
+  eleventyConfig.setLibrary("md", markdownIt().use(markdownItFootnote));
 };
