@@ -8,7 +8,8 @@ export default async function(eleventyConfig) {
   eleventyConfig.setDataDirectory('../_data');
 
   // Pass static files through
-  eleventyConfig.addPassthroughCopy({ "_static": "." });
+  eleventyConfig.addPassthroughCopy({"_static/*": "."});
+  eleventyConfig.addPassthroughCopy({"_static/slides": "slides"});
 
   // Generate two collections, one of blogposts and one of main nav items
   eleventyConfig.addCollection("blogposts", function (collectionApi) {
