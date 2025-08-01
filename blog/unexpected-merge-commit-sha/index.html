@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.2/css/bulma.min.css">
+  <link rel="stylesheet" href="/main.css">
+  <title>The unexpected merge commit SHA | Mato Žgajner</title>
+</head>
+
+<body>
+  <nav class="navbar is-dark">
+    <div class="container">
+      <div class="navbar-brand"><a class="navbar-item" href="/">
+          Me
+        </a><a class="navbar-item" href="/blog/">
+          Blog
+        </a><a class="navbar-item" href="/work/">
+          Work
+        </a><a class="navbar-item" href="/fun/">
+          Fun
+        </a></div>
+    </div>
+  </nav><nav class="navbar is-light">
+    <div class="container">
+      <div class="navbar-brand"><a class="navbar-item" href="/">
+          Me
+        </a><a class="navbar-item" href="/blog/">
+          Blog
+        </a><a class="navbar-item" href="/work/">
+          Work
+        </a><a class="navbar-item" href="/fun/">
+          Fun
+        </a></div>
+    </div>
+  </nav><section class="section">
+    <div class="container content">
+      <h1 class="title">The unexpected merge commit SHA</h1>
+      
+      <p>
+        <strong>Post date:</strong>
+        <timedatetime="2025-08-01T00:00:00.%f">
+          Aug 01, 2025
+          </time>
+      </p>
+      
+      <p>Quick question - let's say I show you a GitHub API response listing some pull requests. Among other things, the listed objects have a property called <code>merge_commit_sha</code> - it's set to <code>null</code> on some and it's a valid SHA string on others. What would you assume about those PRs based on that property?</p>
+<p>If your answer is that the ones with <code>merge_commit_sha</code> set to <code>null</code> are not yet merged while the ones with <code>merge_commit_sha</code> are merged and the <code>merge_commit_sha</code> is a SHA of the merge commit - you're wrong. I assumed that too and caused a bug.</p>
+<p>The actual answer is that:</p>
+<ol>
+<li>PRs that are not yet merged <em>and have conflicts with their target branch</em> have <code>merge_commit_sha</code> set to <code>null</code>.</li>
+<li>PRs that are already merged have <code>merge_commit_sha</code> set to the SHA of their merge commit.</li>
+<li>Here's the kicker - PRs that are not yet merged, but <em>don't have any conflicts with their target branch</em> have <code>merge_commit_sha</code> set to a SHA of a secret internal commit that GitHub creates behind the scenes to test the mergeability of your branch.</li>
+</ol>
+<p>To be fair, they <a href="https://docs.github.com/en/rest/pulls/pulls#get-a-pull-request">say so in the documentation</a>, but it still threw me off.</p>
+
+    </div>
+  </section>
+
+</body>
+
+</html>
